@@ -1,6 +1,7 @@
 import 'package:dummy_projects/proj2/login_page.dart';
 import 'package:flutter/material.dart';
 import 'proj1/text_field_eye.dart';
+import 'proj3/splach_screen1.dart';
 
 void main() => runApp(const MyApp());
 
@@ -31,6 +32,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const LoginPage();
+    return const SplachScreen1();
   }
 }
