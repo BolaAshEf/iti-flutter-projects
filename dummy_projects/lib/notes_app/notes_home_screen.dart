@@ -13,6 +13,27 @@ import 'notes_viewer_body.dart';
 
 final homeScreenGK = GlobalKey();
 
+class MyNoteApp extends StatelessWidget {
+  const MyNoteApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.dark, 
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: NotesAppHomeScreen(key: homeScreenGK,),
+    );
+  }
+}
+
 class NotesAppHomeScreen extends StatefulWidget {
   const NotesAppHomeScreen({super.key});
 
